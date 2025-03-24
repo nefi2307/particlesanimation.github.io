@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+
+    <script defer src="Bola.js"></script>
+    <script defer src="script.js"></script>
+
+</head>
+
+<body>
+    <div class="contenedorCanvas">
+        <div style="border: solid white 2px;">
+            <label for="rangoNumero" style="color: white;">Distancia de conexión: <span id="valorNumero">300</span></label>
+            <input type="range" id="rangoNumero" min="300" max="1000" value="5" step="10">
+            <div>
+                <br>
+                <label for ="rangoBolas" style="color: white;">Número de bolas: <span id="valorBolas">10</span></label>
+                <input type="range" id="rangoBolas" min="10" max="100" value="10" step="1">
+            </div>
+        </div>
+        <canvas> </canvas>
+    </div>
+</body>
+
+</html>
